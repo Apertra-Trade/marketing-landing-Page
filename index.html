@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>Apertra - Open every market</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=29">
+</head>
+<body class="marketing">
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="logo" href="index.html"><span class="logo-mark">A</span><span>APERTRA<small>Open every market</small></span></a>
+    <nav class="navlinks" id="landing-nav">
+      <a href="product.html">Product</a><a href="network.html">Network</a><a href="corridors.html">Corridors</a><a href="pricing.html">Pricing</a><a href="market.html">Market</a><a href="assessment.html">Assessment</a>
+    </nav>
+    <div class="top-actions">
+      <a class="btn btn-primary" href="https://apertra-trade.github.io/development/workspace.html">Sign in</a>
+    </div>
+  </div>
+</header>
+<div class="ap-ticker">Canada · United States · United Kingdom · Netherlands · Australia &nbsp;|&nbsp; 7 launch corridors · One mesh</div>
+<div id="view-landing" class="active">
+<main>
+
+  <div class="wrap hero">
+    <div class="hero-grid" style="grid-template-columns:1fr;max-width:900px">
+      <div>
+        <p class="kicker">Apertra · Open every market</p>
+        <h1>Sell across borders without hiring a <em>trade department.</em></h1>
+        <p class="lede">Apertra is a full mesh network for cross-border commerce, not a Canada-centric hub. A business based in Canada, the US, Europe, Australia or New Zealand can sign up, originate a shipment to any of the other four regions, and import from any of them, on the same rails: classification, true landed cost before you quote, customs-ready documents, freight, and protected payment in one workflow. An exporter in Australia selling to the US, a winery in New Zealand selling to Europe, a brand in Europe selling to Canada: same account, same record, same protection.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#calculator" style="min-height:48px;padding:0 22px">Calculate a landed cost</a>
+          <button type="button" class="btn btn-ghost" style="min-height:48px;padding:0 22px" data-view="app">See the workspace</button>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-item"><b>~$1.0T</b><span>Corridor SAM: SME trade across the 5 regions</span></div>
+          <div class="proof-item"><b>$4.8T+</b><span>Home-market SAM, SMEs trading worldwide</span></div>
+          <div class="proof-item"><b>7</b><span>Launch corridors: Canada and US launch states, out and back</span></div>
+        </div>
+      </div>
+
+      <!-- Calculator -->
+      
+    </div>
+
+    <figure class="hero-photo" style="margin-left:0;margin-right:0">
+      <img class="ap-hero-img" src="assets/ship-terminal.jpg" alt="Aerial view of a container terminal with gantry cranes loading a container ship">
+      <figcaption><b>Trade, in motion.</b> A container terminal at work. Apertra runs the paperwork, payment protection and tracking behind scenes like this, on every launch corridor.</figcaption>
+    </figure>
+  </div>
+  <section class="calc-band">
+    <div class="wrap">
+      <div class="sec-head center"><h2>Start with the number</h2><p>Every Apertra shipment starts with a true landed cost, calculated before anyone quotes anyone. Try the calculator:</p></div>
+      <div class="calc" id="calculator">
+        <div class="calc-head">
+          <h3>Landed cost calculator</h3>
+          <p>Know the full cost at the border before you quote a buyer. Try it:</p>
+        </div>
+        <div class="calc-body">
+          <div class="field">
+            <label for="calc-product">Product</label>
+            <select id="calc-product">
+              <option value="maple">Maple syrup and pantry foods, 500 ml</option>
+              <option value="skincare">Natural skincare and cosmetics</option>
+              <option value="parts">Industrial machinery parts, steel</option>
+              <option value="honey">Honey and specialty foods, jars</option>
+            </select>
+            <span class="hs-chip">Suggested HS code <span class="mono" id="calc-hs">1702.20</span> <span class="tag green" id="calc-fta">CUSMA eligible</span></span>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="calc-dest">Destination</label>
+              <select id="calc-dest">
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="de">Germany (EU)</option>
+                <option value="jp">Japan</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="calc-terms">Delivery terms</label>
+              <select id="calc-terms">
+                <option value="dap">DAP, buyer door</option>
+                <option value="ddp">DDP, duties paid</option>
+                <option value="exw">EXW, factory gate</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label>Shipment value: <span class="range-val" id="calc-val-label">CAD $25,000</span></label>
+            <input type="range" id="calc-value" min="2000" max="120000" step="1000" value="25000">
+          </div>
+          <div class="calc-result">
+            <div class="calc-total"><span>Total landed cost</span><b id="calc-total">$28,940</b></div>
+            <div id="calc-bars"></div>
+            <div class="calc-note" id="calc-note"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head center"><h2>Follow one shipment, door to door</h2><p>The story of AP-2039: 400 cases of Northwind maple syrup, from a warehouse in Toronto to shelves in Rotterdam. This is what Apertra does on every shipment, on every corridor.</p></div>
+
+      <div class="ap-chapter">
+        <img src="assets/ship-warehouse-dock.jpg" alt="Forklift loading palletised export cartons at a warehouse dock">
+        <div class="ap-ch-text"><span class="ap-ch-num">Chapter 1 · Toronto, Canada</span><h3>Packed, checked, and stopped early</h3><p>Northwind palletises 400 cases of maple syrup. Before anything moves, Apertra runs the compliance checklist for the destination and flags one problem: the nutrition panel does not meet EU labelling rules. The labels are reprinted the same day, in Toronto, instead of being seized in Rotterdam.</p><span class="ap-fact">Caught before departure: EU label format, French and Dutch language requirements</span></div>
+      </div>
+
+      <div class="ap-chapter flip">
+        <img src="assets/ship-port-truck.jpg" alt="Container being loaded onto a truck at a port terminal">
+        <div class="ap-ch-text"><span class="ap-ch-num">Chapter 2 · The paperwork</span><h3>Cleared before it moves</h3><p>From one shipment record, Apertra generates the commercial invoice, the packing list, and the CETA certificate of origin. The HS code, 1702.20, is confirmed by a licensed reviewer, so the shipment enters the EU at the preferential rate.</p><span class="ap-fact">Duty on arrival: 0% under CETA, instead of the standard rate</span></div>
+      </div>
+
+      <div class="ap-chapter">
+        <img src="assets/ship-ocean-ship.jpg" alt="Container ship crossing the Atlantic Ocean">
+        <div class="ap-ch-text"><span class="ap-ch-num">Chapter 3 · Eleven days on the Atlantic</span><h3>On the water, money protected</h3><p>The container trucks to Montreal and sails for Rotterdam. The buyer, De Markt BV, has already funded escrow, so Northwind is not carrying the payment risk of a first order with a new partner, and De Markt is not paying for goods it has not received.</p><span class="ap-fact">Escrow funded before departure, released on customs clearance</span></div>
+      </div>
+
+      <div class="ap-chapter flip">
+        <img src="assets/ship-port-aerial.jpg" alt="Aerial view of cranes unloading a container ship at Rotterdam">
+        <div class="ap-ch-text"><span class="ap-ch-num">Chapter 4 · Rotterdam, Netherlands</span><h3>Customs in hours, not days</h3><p>The entry was pre-filed from the same record, so clearance is a check, not an investigation. The container is released the day it berths, escrow settles to Northwind, and both sides get the complete file.</p><span class="ap-fact">One audit trail, kept for seven years, for both parties</span></div>
+      </div>
+
+      <div class="ap-chapter">
+        <img src="assets/ship-trucks-dusk.jpg" alt="Trucks on the highway at dusk carrying the final delivery">
+        <div class="ap-ch-text"><span class="ap-ch-num">Chapter 5 · On shelves</span><h3>The last mile is the easy part</h3><p>A truck takes the pallets from the terminal to De Markt's distribution centre. Fourteen days after it left Toronto, the syrup is on shelves in the Netherlands, and Northwind has a verified trade history that makes its next match, in any of the five regions, easier to win.</p><span class="ap-fact">Door to door: 14 days, one platform, zero consultants</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="sec-head center"><h2>Every way freight moves</h2><p>Apertra books and tracks all four modes on the same shipment record, and prices them into the landed cost before you commit.</p></div>
+      <div class="ap-mode-grid">
+        <div class="ap-mode"><img src="assets/ship-trucks-dusk.jpg" alt="Semi trucks on a highway at dusk"><div class="ap-mode-body"><h3>Road</h3><p>The backbone of the Canada-US corridor and every last mile in all five regions. Door to door, no terminal handling.</p><span class="ap-transit">Toronto to Chicago: 2 to 4 days</span></div></div>
+        <div class="ap-mode"><img src="assets/ship-ocean-ship.jpg" alt="Container ship at sea"><div class="ap-mode-body"><h3>Ocean</h3><p>Full and shared containers for the long corridors: to the UK and Netherlands, and across the Pacific to Australia.</p><span class="ap-transit">Montreal to Rotterdam: 10 to 12 days</span></div></div>
+        <div class="ap-mode"><img src="assets/ship-air-cargo.jpg" alt="Cargo containers being loaded into a freighter aircraft"><div class="ap-mode-body"><h3>Air</h3><p>For high-value and perishable goods where a week on the water costs more than the flight. Cold-chain options on food corridors.</p><span class="ap-transit">Toronto to London: 2 to 3 days</span></div></div>
+        <div class="ap-mode"><img src="assets/ship-rail-yard.jpg" alt="Freight train carrying containers through a rail yard"><div class="ap-mode-body"><h3>Rail</h3><p>Intermodal rail for heavy, lower-urgency freight across North America and within Europe, at the lowest cost per kilo.</p><span class="ap-transit">Toronto to Vancouver: 5 to 7 days</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head center"><h2>Made for the people who make things</h2><p>Apertra members are not logistics departments. They are owners, farmers, makers and drivers who sell across borders themselves.</p></div>
+      <figure class="ap-banner">
+        <img src="assets/ind-owner.jpg" alt="Business owner standing in his warehouse among shelving and stock">
+        <figcaption><b>Owners, not freight departments.</b> The typical Apertra exporter is a business like Northwind: a small team, a warehouse, and a product that deserves a bigger market.</figcaption>
+      </figure>
+      <div class="ap-ind-grid">
+        <div class="ap-ind"><img src="assets/ind-farm.jpg" alt="Combine harvester working a golden grain field from above"><div class="ap-mode-body"><h3>Food and agriculture</h3><p>Grains, pulses, honey, seafood and packaged foods, with biosecurity and labelling handled per destination, including Australia and New Zealand.</p></div></div>
+        <div class="ap-ind"><img src="assets/ind-factory.jpg" alt="Workers operating machinery on a manufacturing floor"><div class="ap-mode-body"><h3>Manufacturing</h3><p>Machinery parts and industrial goods, classified once and documented for repeat shipments on every corridor.</p></div></div>
+        <div class="ap-ind"><img src="assets/ind-driver.jpg" alt="Truck driver at the wheel of his cab"><div class="ap-mode-body"><h3>The people on the road</h3><p>Every Apertra shipment rides with independent carriers and drivers, booked and tracked on the same record as the paperwork.</p></div></div>
+        <div class="ap-ind"><img src="assets/ship-warehouse-dock.jpg" alt="Forklift loading pallets at a warehouse dock"><div class="ap-mode-body"><h3>Warehouses and 3PLs</h3><p>Export-ready warehousing partners in all five regions, so goods are packed, labelled and staged correctly the first time.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Friction -->
+  <section class="alt" style="padding-top:64px">
+    <div class="wrap">
+      <div class="sec-head"><h2>From catalogue to cleared in three moves</h2></div>
+      <div class="steps">
+        <div class="step"><span class="n">STEP 1</span><h3>Connect your catalogue</h3><p>Import products once. Apertra classifies every SKU and shows which markets are actually profitable after duty and freight.</p></div>
+        <div class="step"><span class="n">STEP 2</span><h3>Get matched and quote the real number</h3><p>Apertra matches you with verified buyers and importers on your corridor. Send them a landed cost, not a guess. Documents and the compliance checklist generate from the same shipment record.</p></div>
+        <div class="step"><span class="n">STEP 3</span><h3>Ship and get paid</h3><p>Book freight in one click. Buyer funds sit in escrow and release when customs clears, with a full audit trail kept for seven years.</p></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="ap-facts">
+        <h2 style="color:#fff;margin-top:0">The trade Apertra is built for</h2>
+        <div class="ap-facts-grid">
+          <div><b>$1T+</b><span>Goods trade between Canada and the US every year, the busiest corridor on the mesh</span></div>
+          <div><b>$134B</b><span>Canada-EU trade in 2024, up 77% since CETA took effect</span></div>
+          <div><b>$2.7T</b><span>Total merchandise trade across the corridors between the five regions</span></div>
+          <div><b>~$1.0T</b><span>Of that trade is SME trade, the part Apertra is built to serve</span></div>
+        </div>
+        <p class="ap-src">Sources: Statistics Canada, Eurostat, US SBA, ABS and MBIE figures, as detailed on the <a href="market.html" style="color:#fff">Market page</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="sec-head center"><h2>The biggest movers on the network</h2><p>Apertra partners trade at real scale. A few of the largest importers and exporters on the mesh:</p></div>
+      <div class="ap-spot-grid">
+        <div class="ap-spot"><span class="ap-role">Buyer · Chicago, United States</span><h3>Great Lakes Grocery</h3><span class="ap-vol">$31M</span><p>Annual buying across Canada, Europe and New Zealand: specialty foods, pantry and private label.</p></div>
+        <div class="ap-spot"><span class="ap-role">Importer · Los Angeles, United States</span><h3>Pacific Rim Imports</h3><span class="ap-vol">$24M</span><p>Annual imports from Australia, New Zealand and Canada, mostly food and beverage.</p></div>
+        <div class="ap-spot"><span class="ap-role">Importer · Rotterdam, Netherlands</span><h3>De Markt BV</h3><span class="ap-vol">€18M</span><p>Annual imports into the EU, the receiving partner in the AP-2039 story above.</p></div>
+        <div class="ap-spot"><span class="ap-role">Exporter · Saskatoon, Canada</span><h3>Prairie Grains Co.</h3><span class="ap-vol">$16M</span><p>Annual exports of grains and pulses to Europe and the US.</p></div>
+      </div>
+      <p style="margin-top:18px"><a href="network.html">See the full network and partner spotlight</a></p>
+    </div>
+  </section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head center"><h2>Explore Apertra</h2><p>Every part of the platform, on its own page.</p></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+      <a href="product.html" style="display:block;padding:20px;border:1px solid #ddd;border-radius:14px;color:inherit;text-decoration:none"><b>Product</b><br>The execution engine: classification, documents, compliance, freight and escrow.</a>
+      <a href="network.html" style="display:block;padding:20px;border:1px solid #ddd;border-radius:14px;color:inherit;text-decoration:none"><b>Network</b><br>Verified buyers, exporters and importers in all five regions.</a>
+      <a href="corridors.html" style="display:block;padding:20px;border:1px solid #ddd;border-radius:14px;color:inherit;text-decoration:none"><b>Corridors</b><br>Seven launch corridors, one set of rails, the mesh ahead.</a>
+      <a href="pricing.html" style="display:block;padding:20px;border:1px solid #ddd;border-radius:14px;color:inherit;text-decoration:none"><b>Pricing</b><br>Free to join. You pay when trade moves.</a>
+      <a href="market.html" style="display:block;padding:20px;border:1px solid #ddd;border-radius:14px;color:inherit;text-decoration:none"><b>Market</b><br>Five regions, one mesh, and the revenue model.</a>
+      <a href="assessment.html" style="display:block;padding:20px;border:1px solid #ddd;border-radius:14px;color:inherit;text-decoration:none"><b>Assessment</b><br>An honest read on the opportunity and the risks.</a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+<footer>
+  <div class="wrap foot">
+    <span><b style="color:var(--ink)">APERTRA</b> &middot; Open every market &middot; Cross-border commerce OS &middot; Toronto, Canada</span>
+    <span><a href="product.html">Product</a> &middot; <a href="network.html">Network</a> &middot; <a href="corridors.html">Corridors</a> &middot; <a href="pricing.html">Pricing</a> &middot; <a href="market.html">Market</a> &middot; <a href="assessment.html">Assessment</a> &middot; <a href="https://apertra-trade.github.io/development/workspace.html">Sign in</a></span>
+    <span>Concept site built from founder research, November 2026. Market figures as cited in that research.</span>
+  </div>
+</footer>
+</div>
+
+<div hidden aria-hidden="true">
+
+
+
+
+
+<input type="text" id="net-search" value="">
+<button type="button" id="net-invite-btn">invite</button>
+<img id="spp-img" alt=""><span id="spp-name"></span><span id="spp-meta"></span><span id="spp-line"></span>
+<button type="button" id="spp-btn">preview</button>
+<select id="ship-buyer"><option value="northwind" selected>northwind</option></select>
+</div>
+<script src="assets/site.js?v=15"></script>
+<script src="assets/pages.js?v=5"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>Assessment - Apertra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=29">
+</head>
+<body class="marketing">
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="logo" href="index.html"><span class="logo-mark">A</span><span>APERTRA<small>Open every market</small></span></a>
+    <nav class="navlinks" id="landing-nav">
+      <a href="product.html">Product</a><a href="network.html">Network</a><a href="corridors.html">Corridors</a><a href="pricing.html">Pricing</a><a href="market.html">Market</a><a href="assessment.html">Assessment</a>
+    </nav>
+    <div class="top-actions">
+      <a class="btn btn-primary" href="https://apertra-trade.github.io/development/workspace.html">Sign in</a>
+    </div>
+  </div>
+</header>
+<div id="view-landing" class="active">
+<main>
+<section class="alt" id="verdict">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What I think, since you asked</h2>
+        <p>A straight read of your research, the parts that are strong, the parts that will get challenged, and the call I would make first.</p>
+      </div>
+      <div class="verdict">
+        <div class="v-card good">
+          <h3>What is genuinely strong</h3>
+          <ul>
+            <li>The take-rate design is the best idea in the document. Embedding it in FX and escrow, where you are cheaper than the bank, removes the usual reason platforms get disintermediated.</li>
+            <li>Selling a landed cost and a cleared border, not "AI", is the right pitch. Buyers pay for certainty.</li>
+            <li>The audit trail moat is real. Compliance records are sticky in a way chat history never is.</li>
+            <li>AU/NZ biosecurity is a genuine second moat, not just more geography. Food, wine, beauty and agtech exporters face declarations where one error can cost the whole shipment, so a proven biosecurity record is hard for a generalist rival to copy.</li>
+            <li>The mesh itself is the strongest structural choice in the revised model. A hub-and-spoke product sells one corridor per customer; a mesh sells up to four destinations plus importing on one account, which is why average GTV per customer, and therefore take-rate revenue, rises without needing more customers.</li>
+          </ul>
+        </div>
+        <div class="v-card risk">
+          <h3>What will get pushed on</h3>
+          <ul>
+            <li>Classification liability. The moment an HS code is wrong and a client is fined, "the AI said so" is not a defence. Budget for licensed broker review and E&amp;O insurance from the first paying cohort. In AU/NZ the same point applies to biosecurity: a wrong declaration can destroy the goods, not just delay them.</li>
+            <li>The Year 5 line needs 17,500 active customers spread across all five regions (15,000 in US/CA/EU plus 2,500 in AU/NZ), each now assumed to trade $1.25M a year on average in US/CA/EU because one account covers up to four destinations. Investors will push on exactly that wallet-share assumption, and on what the first 750 cost to acquire.</li>
+            <li>Twenty directed corridors plus escrow plus freight plus finance is a lot if you launch it all at once. Each direction adds broker coverage, compliance data and a failure mode. Europe is not one launch, and AU/NZ cannot be rushed: VAT and product rules differ by EU country, and biosecurity rules differ again in AU/NZ.</li>
+          </ul>
+        </div>
+        <div class="v-card call">
+          <h3>The call I would make</h3>
+          <p style="margin-bottom:12px"><b>Build the mesh, launch it in sequence:</b> The architecture is a full mesh from day one, so no region is ever just an export origin or just a destination. The rollout is still phased to control regulatory cost: Phase 1 validates on one wedge (specialty food into the US, with HS classification, landed cost, and generated treaty plus FDA documents), Phase 2 opens Europe in both directions, Phase 3 opens Australia and New Zealand in both directions, English-speaking, similar legal systems, high-value food, wine, beauty and agtech, where biosecurity compliance is the high-friction advantage worth owning. Run freight and brokerage manually behind the scenes, concierge style, for the first 20 customers in each phase.</p>
+          <p>Interview those 15 to 20 exporters first, in whichever region you launch, with the one question from your research: what was the last international order you turned down, and exactly where did it get stuck? Their answers should pick the second feature, not the roadmap. The first corridor pays the bills and proves the engine; the full 20-corridor mesh is where the valuation multiples come from.</p>
+        </div>
+      </div>
+
+      <div class="cta-band" style="margin-top:36px">
+        <div><h2>Your next export order should not need a consultant.</h2><p>Open the workspace to see a live specialty food exporter running shipments, compliance and payments on Apertra.</p></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap"><button type="button" class="btn btn-light" style="min-height:48px" data-view="app">Open the workspace demo</button><a class="btn" href="index.html#calculator" style="min-height:48px;background:transparent;color:#ffffff;border-color:rgba(255,255,255,.5)">Try the calculator</a></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap foot">
+    <span><b style="color:var(--ink)">APERTRA</b> &middot; Open every market &middot; Cross-border commerce OS &middot; Toronto, Canada</span>
+    <span><a href="product.html">Product</a> &middot; <a href="network.html">Network</a> &middot; <a href="corridors.html">Corridors</a> &middot; <a href="pricing.html">Pricing</a> &middot; <a href="market.html">Market</a> &middot; <a href="assessment.html">Assessment</a> &middot; <a href="https://apertra-trade.github.io/development/workspace.html">Sign in</a></span>
+    <span>Concept site built from founder research, November 2026. Market figures as cited in that research.</span>
+  </div>
+</footer>
+</div>
+
+<div hidden aria-hidden="true">
+<input type="range" id="calc-value" value="25000">
+<select id="calc-product"><option value="maple" selected>maple</option></select>
+<select id="calc-dest"><option value="us" selected>us</option></select>
+<select id="calc-terms"><option value="dap" selected>dap</option></select>
+<span id="calc-total"></span><span id="calc-bars"></span><span id="calc-hs"></span><span id="calc-fta"></span><span id="calc-note"></span><span id="calc-val-label"></span>
+<input type="text" id="net-search" value="">
+<button type="button" id="net-invite-btn">invite</button>
+<img id="spp-img" alt=""><span id="spp-name"></span><span id="spp-meta"></span><span id="spp-line"></span>
+<button type="button" id="spp-btn">preview</button>
+<select id="ship-buyer"><option value="northwind" selected>northwind</option></select>
+</div>
+<script src="assets/site.js?v=15"></script>
+<script src="assets/pages.js?v=5"></script>
+</body>
+</html>
