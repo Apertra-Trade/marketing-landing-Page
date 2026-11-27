@@ -21,12 +21,12 @@ function showPaneById(id){
 
 /* ---- Landed cost model (illustrative rates, labelled in UI copy as estimates) ---- */
 var PRODUCTS={
-  maple:{hs:'1702.20', name:'Maple syrup', duty:{us:0, uk:0, de:0, jp:0.171}, freightPerKg:1.9, fta:{us:'CUSMA eligible',uk:'UK TCA eligible',de:'CETA eligible',jp:'No FTA rate'}},
-  skincare:{hs:'3304.99', name:'Skincare', duty:{us:0, uk:0, de:0, jp:0}, freightPerKg:3.4, fta:{us:'CUSMA eligible',uk:'UK TCA eligible',de:'CETA eligible',jp:'MFN 0%'}},
-  parts:{hs:'8483.40', name:'Machinery parts', duty:{us:0.025, uk:0.017, de:0.017, jp:0}, freightPerKg:1.2, fta:{us:'MFN rate applies',uk:'CETA eligible',de:'CETA eligible',jp:'MFN 0%'}},
-  honey:{hs:'0409.00', name:'Honey', duty:{us:0, uk:0, de:0, jp:0.255}, freightPerKg:2.1, fta:{us:'CUSMA eligible',uk:'UK TCA eligible',de:'CETA eligible',jp:'No FTA rate'}}
+  maple:{hs:'1702.20', name:'Maple syrup', duty:{us:0, uk:0, nl:0, au:0}, freightPerKg:1.9, fta:{us:'CUSMA eligible',uk:'UK TCA eligible',nl:'CETA eligible',au:'CPTPP eligible'}},
+  skincare:{hs:'3304.99', name:'Skincare', duty:{us:0, uk:0, nl:0, au:0}, freightPerKg:3.4, fta:{us:'CUSMA eligible',uk:'UK TCA eligible',nl:'CETA eligible',au:'CPTPP eligible'}},
+  parts:{hs:'8483.40', name:'Machinery parts', duty:{us:0.025, uk:0.017, nl:0.017, au:0}, freightPerKg:1.2, fta:{us:'MFN rate applies',uk:'TCA eligible',nl:'CETA eligible',au:'CPTPP eligible'}},
+  honey:{hs:'0409.00', name:'Honey', duty:{us:0, uk:0, nl:0, au:0}, freightPerKg:2.1, fta:{us:'CUSMA eligible',uk:'UK TCA eligible',nl:'CETA eligible',au:'CPTPP eligible · biosecurity applies'}}
 };
-var DEST={us:{label:'United States', freightBase:1450, days:'2 to 4 days by truck'}, uk:{label:'United Kingdom', freightBase:2350, days:'10 to 12 days by ocean'}, de:{label:'Germany (EU)', freightBase:2480, days:'11 to 14 days by ocean'}, jp:{label:'Japan', freightBase:3100, days:'14 to 18 days by ocean'}};
+var DEST={us:{label:'United States', freightBase:1450, days:'2 to 4 days by truck'}, uk:{label:'United Kingdom', freightBase:2350, days:'10 to 12 days by ocean'}, nl:{label:'Netherlands', freightBase:2480, days:'11 to 14 days by ocean'}, au:{label:'Australia', freightBase:2900, days:'14 to 21 days by ocean'}};
 function money(n){ return 'CAD $' + Math.round(n).toLocaleString('en-CA'); }
 function moneyShort(n){ return '$' + Math.round(n).toLocaleString('en-CA'); }
 function runCalc(){
